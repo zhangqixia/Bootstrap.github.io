@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/CyanRed.css">
+    <script src="js/CyanRed.js"></script>
+    <title>CyanRed Li</title>
+</head>
+<body>
+    <!--导航栏-->
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+            <a class="navbar-brand" href="#">
+                <img src="img/bird.jpg" style="width:40px">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#btn1">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="btn1">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">第一</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">第二</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">第三</a>
+                        <div id="xiala" class="dropdown-menu">
+                            <a class="dropdown-item" href="#">3.1</a>
+                            <a class="dropdown-item" href="#">3.2</a>
+                            <a class="dropdown-item" href="#">3.3</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="modal" data-target="#mymodal">关于我</a>
+                        <!--模态框-->
+                        <!--模态框3件套-->
+                        <div class="modal fade" id="mymodal">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content">
+                                    <!--模态框头部-->
+                                    <div class="modal-header">
+                                        <h1 class="modal-title">请联系我！</h1>
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    </div>
+                                    <!--模态框主体-->
+                                    <div class="modal-body">
+                                        <img src="img/weixin.jpg"/>
+                                    </div>
+                                    <!--模态框底部-->
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secendary" data-dismiss="modal">关闭</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <a class="navbar-text ml-auto biaoti" href="https://baike.baidu.com/item/%E6%88%91%E6%83%B3%E5%90%83%E6%8E%89%E4%BD%A0%E7%9A%84%E8%83%B0%E8%84%8F/22068674">我想吃掉你的胰脏！！！</a>
+                <form class="form-inline ml-auto">
+                    <input id="inp" class="from-control shousuo" type="text"/>
+                    <button id="btn" class="btn btn-success shousuobtn" type="submit">百度代搜</button>
+                </form>
+            </div>
+        </nav>
+        <!--轮播图-->
+    </div>
+    <div id="demo" class="carousel slide" data-ride="carousel">
+        <!--指示符-->
+        <ul class="carousel-indicators">
+            <li data-target="#demo" data-slide-to="0" class="active"></li>
+            <li data-target="#demo" data-slide-to="1"></li>
+            <li data-target="#demo" data-slide-to="2"></li>
+            <li data-target="#demo" data-slide-to="3"></li>
+        </ul>
+        <!--轮播图片-->
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="img/kuanping3.jpg">
+                    <div class="carousel-caption">
+                        <h1>可爱玩偶</h1>
+                        <p>曾经我也有过这样的玩偶</p>
+                    </div>
+            </div>
+            <div class="carousel-item">
+                <img src="img/kuanping1.jpg">
+                    <div class="carousel-caption">
+                        <h1>紫罗兰</h1>
+                        <p>想象一下自己躺在这一片紫罗兰花上！</p>
+                    </div>
+            </div>
+            <div class="carousel-item">
+                <img src="img/kuanping2.jpg">
+                    <div class="carousel-caption">
+                        <h1>海边的曼切斯特</h1>
+                        <p>这是我最喜欢的电影之一</p>
+                    </div>
+            </div>
+            <div class="carousel-item">
+                <img src="img/kuanping4.jpg">
+                    <div class="carousel-caption">
+                        <h1>爱情啊</h1>
+                        <p>曾经有一段...</p>
+                    </div>
+            </div>
+        </div>
+        <!--左右切换按钮-->
+        <a class="carousel-control-prev" href="#demo" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#demo" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </a>
+    </div>
+</body>
+</html>
