@@ -1,0 +1,58 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color:#ffff;
+}
+.container-fluid{
+    width: auto;
+}
+#xiala{
+    width: 100px;
+    height: auto;
+    background-color:rgba(221, 211, 211, 0.596);
+}
+.shousuo,.shousuobtn{
+    border-radius: 50px;
+    outline-style: none;
+}
+.shousuobtn{
+    width: auto;
+    height: auto;
+}
+#btn1 .biaoti{
+    color:#fff;
+    text-decoration: none;
+}
+.carousel-inner img{
+    width: 100%;
+    height: 400px;
+}
+#demo{
+    margin: 3px 15px;
+}
+#carousel-inner .carousel-item .carousel-caption h1,p{
+    font-size: 24px;
+    font-weight: bold;
+    color: black;
+}
+h1{
+    font-size: 28px;
+    font-weight: bold;
+    color: black;
+}
+#demo ul li{
+    display:inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50px;
+
+}
+#demo .carousel-inner .carousel-item .carousel-caption{
+    display: block;
+}
+#demo .carousel-inner .carousel-item .carousel-caption:hover{
+    display: none;
+}
+.modal .modal-dialog .modal-content{
+    background-color: skyblue;
+}
